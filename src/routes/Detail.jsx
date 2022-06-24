@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import MovieInfo from "../components/MovieInfo";
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import MovieInfo from '../components/MovieInfo';
 
 const Detail = () => {
   const { id } = useParams();
   const [loading, setLoading] = useState(true);
-  const [movieInfo, setMovieInfo] = useState("");
+  const [movieInfo, setMovieInfo] = useState('');
   const getMovieInfo = async () => {
     const response = await fetch(
       `https://yts.mx/api/v2/movie_details.json?movie_id=${id}`
