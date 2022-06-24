@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Movie = ({ id, coverImg, title, summary, genres }) => {
   return (
